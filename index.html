@@ -23,9 +23,9 @@
                   <h2 class="card-title">Triangle</h2>
                   <p>Area (A) = 0.5 X bX h</p>
                   <div class="flex mt-3">
-                    <input id="input-base" class="w-20  p-2 bg-gray-200 rounded-lg" type="text" placeholder="b">
+                    <input id="input-trianglebase" class="w-20  p-2 bg-gray-200 rounded-lg" type="text" placeholder="b">
                     <span class="mr-4 ml-2">cm</span>
-                    <input id="input-hight" class="w-20  p-2  bg-gray-200 rounded-lg" type="text" placeholder="h">
+                    <input id="input-trianglehight" class="w-20  p-2  bg-gray-200 rounded-lg" type="text" placeholder="h">
                     <span class="mr-4 ml-2">cm</span>
                   </div>
                   
@@ -41,14 +41,14 @@
                   <h2 class="card-title">Rectangle</h2>
                   <p>Area (A) = w X I</p>
                   <div class="flex mt-3">
-                    <input class="w-20  p-2 bg-gray-200 rounded-lg" type="text" placeholder="b">
+                    <input id="input-rectanglewidth" class="w-20  p-2 bg-gray-200 rounded-lg" type="text" placeholder="W">
                     <span class="mr-4 ml-2">cm</span>
-                    <input class="w-20  p-2  bg-gray-200 rounded-lg" type="text" placeholder="h">
+                    <input id="input-rectanglelength" class="w-20  p-2  bg-gray-200 rounded-lg" type="text" placeholder="l">
                     <span class="mr-4 ml-2">cm</span>
                   </div>
                   
                   <div class="card-actions">
-                    <button class="btn btn-primary w-full mt-5">Calculate</button>
+                    <button onclick="rectanglearea()" class="btn btn-primary w-full mt-5">Calculate</button>
                   </div>
                 </div>
             </div>
@@ -135,5 +135,6 @@
         </div>
     </main>
     <script src="tringle-calculate.js"></script>
+    <script src="rectangle.js"></script>
 </body>
 </html>
