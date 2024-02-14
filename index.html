@@ -57,16 +57,16 @@
                 <figure><img class="p-4 mt-8" width="200px" src="images/parallelogram.png" alt="Triangle" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Parallelogram</h2>
-                  <p>Area (A) = 0.5 X bX h</p>
+                  <p>Area (A) = b X h</p>
                   <div class="flex mt-3">
-                    <input class="w-20  p-2 bg-gray-200 rounded-lg" type="text" placeholder="b">
+                    <input id="input-parallelogrambase" class="w-20  p-2 bg-gray-200 rounded-lg" type="text" placeholder="b">
                     <span class="mr-4 ml-2">cm</span>
-                    <input class="w-20  p-2  bg-gray-200 rounded-lg" type="text" placeholder="h">
+                    <input id="input-parallelogramhigth" class="w-20  p-2  bg-gray-200 rounded-lg" type="text" placeholder="h">
                     <span class="mr-4 ml-2">cm</span>
                   </div>
                   
                   <div class="card-actions">
-                    <button class="btn btn-primary w-full mt-5">Calculate</button>
+                    <button onclick="parallelogram()" class="btn btn-primary w-full mt-5">Calculate</button>
                   </div>
                 </div>
             </div>
@@ -75,16 +75,16 @@
                 <figure><img class="p-4 mt-12" width="200px" src="images/rhombus.png" alt="Triangle" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Rhombus</h2>
-                  <p>Area (A) = 0.5 X bX h</p>
+                  <p>Area (A) = 0.5 X b1 X b2 </p>
                   <div class="flex mt-3">
-                    <input class="w-20  p-2 bg-gray-200 rounded-lg" type="text" placeholder="b">
+                    <input id="input-rhombusBase1" class="w-20  p-2 bg-gray-200 rounded-lg" type="text" placeholder="b">
                     <span class="mr-4 ml-2">cm</span>
-                    <input class="w-20  p-2  bg-gray-200 rounded-lg" type="text" placeholder="h">
+                    <input id="input-rhombusBase2" class="w-20  p-2  bg-gray-200 rounded-lg" type="text" placeholder="h">
                     <span class="mr-4 ml-2">cm</span>
                   </div>
                   
                   <div class="card-actions">
-                    <button class="btn btn-primary w-full mt-5">Calculate</button>
+                    <button onclick="rhombus()" class="btn btn-primary w-full mt-5">Calculate</button>
                   </div>
                 </div>
             </div>
@@ -93,16 +93,16 @@
                 <figure><img class="p-4 mt-8" width="200px" src="images/pentagon.png" alt="Triangle" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Pentagon</h2>
-                  <p>Area (A) = 0.5 X bX h</p>
+                  <p>Area (A) = 0.5 X pX b</p>
                   <div class="flex mt-3">
-                    <input class="w-20  p-2 bg-gray-200 rounded-lg" type="text" placeholder="b">
+                    <input id="PentagonBase" class="w-20  p-2 bg-gray-200 rounded-lg" type="text" placeholder="p">
                     <span class="mr-4 ml-2">cm</span>
-                    <input class="w-20  p-2  bg-gray-200 rounded-lg" type="text" placeholder="h">
+                    <input id="PentagonHight" class="w-20  p-2  bg-gray-200 rounded-lg" type="text" placeholder="b">
                     <span class="mr-4 ml-2">cm</span>
                   </div>
                   
                   <div class="card-actions">
-                    <button class="btn btn-primary w-full mt-5">Calculate</button>
+                    <button onclick="Pentagon()" class="btn btn-primary w-full mt-5">Calculate</button>
                   </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                 <figure><img class="p-4 mt-20" width="200px" src="images/ellipse.png" alt="Triangle" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Ellipse</h2>
-                  <p>Area (A) = 0.5 X bX h</p>
+                  <p>Area (A) = pi X a X b</p>
                   <div class="flex mt-3">
                     <input class="w-20  p-2 bg-gray-200 rounded-lg" type="text" placeholder="b">
                     <span class="mr-4 ml-2">cm</span>
@@ -136,5 +136,8 @@
     </main>
     <script src="tringle-calculate.js"></script>
     <script src="rectangle.js"></script>
+    <script src="parallelogram.js"></script>
+    <script src="rhombus.js"></script>
+    <script src="pentagon.js"></script>
 </body>
 </html>
