@@ -9,6 +9,27 @@
 </head>
 <body>
     <header>
+        <nav>
+          
+            <div class="navbar bg-blue-200 rounded-xl">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                   
+                  </div>
+                  <a class="btn btn-ghost text-xl">GEOMETRY</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                 
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-blue-500 text-white font-bold">Blog</a>
+                </div>
+              </div>   
+
+        </nav>
 
     </header>
     <main class="m-4">
@@ -113,14 +134,14 @@
                   <h2 class="card-title">Ellipse</h2>
                   <p>Area (A) = pi X a X b</p>
                   <div class="flex mt-3">
-                    <input class="w-20  p-2 bg-gray-200 rounded-lg" type="text" placeholder="b">
+                    <input id="EllipseBase1" class="w-20  p-2 bg-gray-200 rounded-lg" type="text" placeholder="a">
                     <span class="mr-4 ml-2">cm</span>
-                    <input class="w-20  p-2  bg-gray-200 rounded-lg" type="text" placeholder="h">
+                    <input id="EllipseBase2" class="w-20  p-2  bg-gray-200 rounded-lg" type="text" placeholder="b">
                     <span class="mr-4 ml-2">cm</span>
                   </div>
                   
                   <div class="card-actions">
-                    <button class="btn btn-primary w-full mt-5">Calculate</button>
+                    <button onclick=" Ellipse()" class="btn btn-primary w-full mt-5">Calculate</button>
                   </div>
                 </div>
             </div>
@@ -139,5 +160,6 @@
     <script src="parallelogram.js"></script>
     <script src="rhombus.js"></script>
     <script src="pentagon.js"></script>
+    <script src="ellipse.js"></script>
 </body>
 </html>
